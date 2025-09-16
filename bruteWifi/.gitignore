@@ -1,0 +1,8 @@
+.saveHS
+.cache
+backup.py
+.vscode
+__pycache__
+*.pyc
+test.py
+rockyou.txt
