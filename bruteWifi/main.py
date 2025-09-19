@@ -1,7 +1,7 @@
 import os, subprocess, re
 
 # Command templates
-monitorModeCmd = "sudo iw list | grep -o 'monitor' | sort -u",
+monitorModeCmd = "sudo iw list | grep -o 'monitor' | sort -u"
 getInterfaceCmd = "ip link show | grep -oP '(?<=: )[a-zA-Z0-9_-]+' | grep -E '^wl'"
 findwifiCmd = "nmcli device wifi list"
 setlinkUpCmd = "sudo ip link set {interface} up"
